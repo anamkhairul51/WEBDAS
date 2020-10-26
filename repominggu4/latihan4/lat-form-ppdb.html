@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <title>FORMULIR PPDB</title>
+
+ <style type="text/css">
+
+body {
+    margin: 0;
+    padding: 0;
+   }
+
+ * {
+  box-sizing: border-box;
+}
+form {
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+form input {
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+
+form button {
+  background: lightgrey;
+  padding: 0.7em;
+  border: 0;
+}
+
+form button:hover {
+  background: green;
+  color: white;
+}
+
+form span a{
+  background: lightblue;
+  padding: 0.7em;
+  border: 0;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+form span a:hover {
+  background: blue;
+  color: white;
+}
+
+label {
+  text-align: right;
+  display: block;
+  padding: 0.5em 1.5em 0.5em 0;
+}
+
+input {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+input:focus {
+  outline: 3px solid green;
+}
+
+select {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+select:focus {
+  outline: 3px solid green;
+}
+
+@media (min-width: 400px) {
+
+  form {
+    overflow: hidden;
+  }
+
+  label {
+    float: left;
+    width: 200px;
+  }
+
+  input {
+    float: left;
+    width: calc(100% - 200px);
+  }
+
+    select {
+    float: left;
+    width: calc(100% - 200px);
+  }
+
+  button {
+    float: right;
+    width: calc(100% - 200px);
+  }
+
+  .tab1 {
+    tab-size: 2;
+  }
+
+ </style>
+
+</head>
+
+<body>
+
+ <form action="form2.php" method="GET">
+  <h1 align="center">Formulir PPDB Jalur Zonasi Tahun 2020</h1>
+        <h3>Info Pendaftaran</h3>
+        <label>NISN</label>
+        <input name="NISN" type="number">
+        <label>Asal Sekolah</label>
+        <input name="asal_sekolah "type="text">
+        <label>Tahun Lulus</label>
+        <input name="tahun_lulus" type="number" min="1900" max="2099" step="1"/>
+        <label>Hasil Scan Ijazah</label>
+        <input name="ijazah" type="file">
+
+        <h3>Data Calon Peserta</h3>
+        <label>Nama Lengkap</label>
+        <input name="nama_lengkap" type="text">
+        <label>NIK</label>
+        <input name="nik" type="number">
+        <label>Tempat Lahir</label>
+        <input name="tempat_lahir" type="text">
+        <label>Tanggal Lahir</label>
+        <input name="tanggal_lahir" type="date">
+        <label>Jenis Kelamin</label>
+        <select name="jenis_kelamin">
+         <option value="Laki-Laki">Laki-Laki</option>
+         <option value="Perempuan">Perempuan</option>
+        </select>
+        <label>Hasil Scan Akte Kelahiran</label>
+        <input name="akte" type="file">
+        <p>Alamat</p>
+        <label>Desa/Kel.</label>
+        <input name="desa" type="text">
+        <label>Kecamatan</label>
+        <input name="kecamatan" type="text">
+        <label>Kabupaten</label>
+        <input name="kabupaten" type="text">
+        <label>Provinsi</label>
+        <input name="provinsi" type="text">
+        <label>Email Aktif</label>
+        <input name="email" type="email">
+
+        <h3>Data Orang Tua</h3>
+        <label>Nomor Kartu Keluarga</label>
+        <input name="kk" type="number">
+        <label>Nama Ayah Kandung</label>
+        <input name="nama_ayah" type="text">
+        <label>Agama</label>
+        <select name="agama_ayah">
+          <option value="Islam">Islam</option>
+          <option value="Kristen">Kristen</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Budha">Budha</option>
+          <option value="Konghuchu">Konghuchu</option>
+        </select>
+        <label>Pekerjaan</label>
+        <input name="pekerjaan_ayah" type="text">
+        <label>Nama Ibu Kandung</label>
+        <input name="nama_ibu" type="text">
+        <label>Agama</label>
+        <select name="agama_ibu">
+          <option value="Islam">Islam</option>
+          <option value="Kristen">Kristen</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Budha">Budha</option>
+          <option value="Konghuchu">Konghuchu</option>
+        </select>
+        <label>Pekerjaan</label>
+        <input name="pekerjaan_ibu" type="text">
+        <p>Alamat Orang Tua</p>
+        <label>Desa/Kel.</label>
+        <input name="desa_ortu" type="text">
+        <label>Kecamatan</label>
+        <input name="kecamatan_ortu" type="text">
+        <label>Kabupaten</label>
+        <input name="kabupaten_ortu" type="text">
+        <label>Provinsi</label>
+        <input name="provinsi_ortu" type="text">
+        <label>Hasil Scan KK</label>
+        <input name="kk" type="file">
+
+
+
+
+        <button>Daftar</button>
+ </form>
+
+</body>
+
+</html>
